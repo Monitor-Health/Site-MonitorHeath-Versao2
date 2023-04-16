@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./pic/icone.png">
+    <link rel="stylesheet" href="stylesheet_cad.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="fundo">
+        <div class="header">
+            <div class="container">
+                <img src="pic/logo_vacsense SEM FUNDO.png" width="17%" height="17%" class="logo">
+                <ul class="navbar">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Quem Somos</a></li>
+                    <li><a href="">VacSense</a></li>
+                    <li><a href="../simulador-financeiro/simulador-financeiro.html">Simulador</a></li>
+                    <li><a href="./cadastro.html">Cadastro</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                    <button class="botao_cliente">Área do Cliente</button>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- fim header -->
+
+
+
+    <div class="centro">
+        <div class="container2">
+            <!-- começa fundo cinza -->
+
+
+           
+
+                <div class="engloba">
+                    <div style="margin-top: 5px;" class="centro_cadastro">
+                        <h3>Cadastre-se</h3>
+                    </div>
+
+                    <div style=" margin-left: 53px; margin-top: -5px;" class="centro_cadastro">
+                        <input class="input" style="width: 300px;" type="text" placeholder="Nome da Empresa*">
+                        <input class="input" style="width: 180px; margin-left: 5px;" type="text" placeholder="CNPJ*">
+                    </div>
+
+                    <div class="centro_cadastro">
+                        <select class="input" style=" margin-left: 53px; width: 250px; color: #757575;">
+                            <option value="" disabled selected>Segmento</option>
+                            <option value="">Fabricante de Medicamentos</option>
+                            <option value="">Instalação Hospitalar</option>
+                            <option value="">Transporte/Logística</option>
+                        </select><br>
+                    </div>
+
+                    <div class="centro_cadastro">
+                        <input class="input" style="margin-left: 53px;" type="text" placeholder="CEP*">
+                        <input class="input" style=" margin-left: -30px; width: 270px;" type="text"
+                            placeholder="Logradouro*">
+                    </div>
+
+                    <div class="centro_cadastro">
+                        <input class="input" style="margin-left: 53px; width: 150px;" type="text" placeholder="Bairro*">
+                        <input class="input" style="width: 120px; margin-left: -45px;" type="text"
+                            placeholder="Cidade*">
+                        <select class="input" style="width: 150px; margin-left: -45px; color: #757575;">
+                            <option value="" disabled selected>Estado*</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select><br>
+                    </div>
+
+                    <div class="centro_cadastro">
+                        <input class="input" style="margin-left: 53px; width: 300px;" type="text" placeholder="Nome do Responsável*">
+                        <input class="input" style=" margin-left: -30px; width: 150px;" type="text"
+                            placeholder="Telefone*">
+                    </div>
+
+                    <div class="centro_cadastro">
+                        <input class="input" style="margin-left: 53px; width: 350px;" type="text" placeholder="E-mail*">
+                    </div>
+
+                    <div style="margin-bottom: 8px;" class="centro_cadastro">
+                        <input class="input" style="margin-left: 53px; width: 350px;" type="text" placeholder="Confirme seu E-mail*">
+                    </div>
+
+                    <div style="margin-top: -15px;"class="centro_cadastro">
+
+                    <a href="#div_bem_vindo"><button href="#div_1" style="font-size: 13px; padding: 10px 25px; margin-top: 15px;" class="botao_cliente" onclick="cadastrar()">Cadastrar</button></a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- começa fundo azul -->
+            <div style="margin-left: -385px;" class="cadastrar">
+                <img src="./pic/tech_esq.svg" width="250px" style="margin-top: 20px;">
+                <div class="centro_logo">
+                    <img class="logo2" src="./pic/logo_vacsense SEM FUNDO.png" width="250px">
+                    <p style="margin-left: 80px; color: #363636;" class="texto_cadastrado">Esta em dúvida?</p>
+                    <div style="display: flex;">
+                        <a href="../simulador-financeiro/simulador-financeiro.html"><button style="margin-left: 25px;"
+                                class="botao">Calcular Economia</button></a>
+                        <img src="./pic/calc.png" width="25px" style="margin-left: 10px;">
+                    </div>
+                </div>
+                <img src="./pic/tech_dir.svg" width="250px" style="margin-top: 130px; margin-left: 200px; ">
+            </div>
+            <!-- termina fundo azul -->
+        </div>
+    </div><br><br>
+
+
+    <!-- div bem vindo -->
+        <div id="div_bem_vindo"></div>
+
+ <!-- footer  -->
+ <footer id="footer" style="background-color: #bdcedb; width: auto; height: 310px;"><br>
+    <div style="display: flex; align-items: center;">
+        <div style="margin-left: 260px;">
+            <div style="line-height: 5px;">
+                <h3 style="color: #1a3444;">Menu</h3><br>
+                <div style="color: #ffffff; margin-top: -10px; margin-bottom: 30px;">
+                    <a href="#"><p>Home</p></a>
+                        <a href="#"><p>Quem somos?</p></a>
+                        <a href="#"><p>VacSense</p></a>
+                        <a href="../simulador-financeiro/simulador-financeiro.html"><p>Simulador</p></a>
+                        <a href="./cadastro.html"><p>Cadastro</p></a>
+                </div>
+            </div>
+            <div>
+                <img src="./pic/monitor_logo_azul.png" width="200x">
+            </div>
+        </div>
+
+        <div style="margin-left: 250px;">
+            <div style="line-height: 5px;">
+                <h3 style="color: #1a3444;">Endereço</h3><br>
+                <div style="display: flex; align-items: center; margin-top: -10px;">
+                    <div> <img src="./pic/localização.png" width="20px"></div>
+                    <div> <p style="color: #ffffff; margin-left: 10px;">Rua Haddock Lobo, 595 São Paulo - SP</p> </div>
+                </div>
+
+                <h3 style="color: #1a3444;">Contato</h3><br>
+                <div style="display: flex; align-items: center; margin-top: -10px;">
+                    <div> <img src="./pic/telefone.png" width="18px"></div>
+                    <div> <p style="color: #ffffff; margin-left: 10px;">(11) 2145-0400</p> </div>
+                </div><br>
+                <div style="display: flex; align-items: center; margin-top: -10px;">
+                    <div> <img src="./pic/email.png" width="25px"></div>
+                    <div> <p style="color: #ffffff; margin-left: 10px;">atendimentomonitorhealth@gmail.com</p> </div>
+                </div>
+
+
+                <h3 style="color: #1a3444;">Redes Sociais</h3><br>
+                <div style="display: flex; align-items: center; margin-top: -10px;">
+                    <div> <img src="./pic/facebook.png" width="30px"></div>
+                    <div> <img style=" margin-left: 10px;" src="./pic/instagram.png" width="30px"></div>
+                    <div> <img style=" margin-left: 10px;" src="./pic/linkedin.png" width="30px"></div>
+                    <h5 style="color: #1e3a4e; margin-left: 250px;">© 2023 Monitor Health</h5> 
+                </div><br>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
+
+<script>
+    function cadastrar(){
+        div_bem_vindo.innerHTML = `
+    </div>
+    <div class="bem_vindo">
+        <div class="fundo_bem_vindo">
+        <div style=" margin-left: 150px; width: 35%;">
+            <h2>Bem-vindo(a)!</h2>
+            <p style="color: #363636;">Falta pouco para sua empresa começar a desfrutar de todos os benefícios do sensor VacSense!</p>
+            <p style="color: #363636;"> Aguarde um de nossos representantes entrar em contato para mais informações do serviço.</p>
+            <p style="color: #363636;"> Monitor Health agradece!</p> 
+        </div>
+
+        <div style=" margin-top: 15px; margin-left: 50px; width: 35%;">
+            <img src="./pic/vetor_medicamentos.svg" width="300px">
+        </div>
+        </div>
+    </div>
+        `
+    }
+
+</script>
