@@ -60,16 +60,16 @@
                     </div>
 
                     <div class="centro_cadastro">
-                        <input class="input" style="margin-left: 53px;" type="text" placeholder="CEP*">
+                        <input id="input_cep" class="input" style="margin-left: 53px;" type="text" placeholder="CEP*">
                         <input class="input" style=" margin-left: -30px; width: 270px;" type="text"
-                            placeholder="Logradouro*">
+                            placeholder="Logradouro*" id="input_logradouro" onfocus="showEndereco()">
                     </div>
 
                     <div class="centro_cadastro">
-                        <input class="input" style="margin-left: 53px; width: 150px;" type="text" placeholder="Bairro*">
+                        <input class="input" style="margin-left: 53px; width: 150px;" type="text" placeholder="Bairro*" id="input_bairro">
                         <input class="input" style="width: 120px; margin-left: -45px;" type="text"
-                            placeholder="Cidade*">
-                        <select class="input" style="width: 150px; margin-left: -45px; color: #757575;">
+                            placeholder="Cidade*" id="input_cidade">
+                        <select id="select_estado" class="input" style="width: 150px; margin-left: -45px; color: #757575;">
                             <option value="" disabled selected>Estado*</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -203,7 +203,9 @@
 </html>
 
 <script>
-    function cadastrar(){
+    var URL = 'https://viacep.com.br/ws'
+
+    async function cadastrar(){
         div_bem_vindo.innerHTML = `
     </div>
     <div class="bem_vindo">
@@ -223,4 +225,18 @@
         `
     }
 
+    async function showEndereco(){
+        var cep = input_cep.value;
+        var endereco = await getEndereco(cep);
+        input_logradouro.value = endereco.logradouro;
+        input_cidade.value = endereco.localidade;
+        input_bairro.value = endereco.bairro;
+        select_estado.value = endereco.uf;
+    }
+
+    async function getEndereco(cep){
+        var resposta = await fetch(`${URL}/${cep}/json`);
+        var json = await resposta.json();
+        return json;
+    }
 </script>
